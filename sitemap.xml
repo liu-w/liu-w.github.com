@@ -1,12 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://liu-w.github.com/blog/2013/02/18/build-android-project-with-ant/</loc>
+        <lastmod>2013-02-18T14:54:11+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict/</loc>
+        <lastmod>2013-02-18T20:41:12+09:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://liu-w.github.com/blog/2013/02/18/why-cant-i-use-a-url-scheme-starting-with-a-number/
+        </loc>
+        <lastmod>2013-02-18T20:43:44+09:00</lastmod>
+    </url>
+    <url>
         <loc>http://liu-w.github.com/blog/archives/</loc>
-        <lastmod>2013-02-18T11:53:59+09:00</lastmod>
+        <lastmod>2013-02-18T20:43:44+09:00</lastmod>
     </url>
     <url>
         <loc>http://liu-w.github.com/</loc>
-        <lastmod>2013-02-18T11:53:59+09:00</lastmod>
+        <lastmod>2013-02-18T20:43:44+09:00</lastmod>
     </url>
     <url>
         <loc>http://liu-w.github.com/robots.txt</loc>

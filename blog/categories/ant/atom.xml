@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ant | Dev Memo]]></title>
+  <link href="http://liu-w.github.com/blog/categories/ant/atom.xml" rel="self"/>
+  <link href="http://liu-w.github.com/"/>
+  <updated>2013-02-18T20:46:48+09:00</updated>
+  <id>http://liu-w.github.com/</id>
+  <author>
+    <name><![CDATA[Liu Wei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[build android project with ant]]></title>
+    <link href="http://liu-w.github.com/blog/2013/02/18/build-android-project-with-ant/"/>
+    <updated>2013-02-18T12:39:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/02/18/build-android-project-with-ant</id>
+    <content type="html"><![CDATA[<h1>Converting to ant project</h1>
+
+<p>android update project -p <path_to_project>
+or
+android update project -s -p <path_to_project></p>
+
+<h1>solving the "dir.sdk missing" error</h1>
+
+<p>sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through an env var.</p>
+
+<p>android update project --target android-17 ...</p>
+]]></content>
+  </entry>
+  
+</feed>

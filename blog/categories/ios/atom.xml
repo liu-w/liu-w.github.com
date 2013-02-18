@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Dev Memo]]></title>
-  <link href="http://liu-w.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: iOS | Dev Memo]]></title>
+  <link href="http://liu-w.github.com/blog/categories/ios/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
   <updated>2013-02-18T20:46:48+09:00</updated>
   <id>http://liu-w.github.com/</id>
@@ -18,7 +18,7 @@
     <link href="http://liu-w.github.com/blog/2013/02/18/why-cant-i-use-a-url-scheme-starting-with-a-number/"/>
     <updated>2013-02-18T16:00:00+09:00</updated>
     <id>http://liu-w.github.com/blog/2013/02/18/why-cant-i-use-a-url-scheme-starting-with-a-number</id>
-    <content type="html"><![CDATA[<p>It seems ok in iOS 5, but in iOS 6, it won&#8217;t work.</p>
+    <content type="html"><![CDATA[<p>It seems ok in iOS 5, but in iOS 6, it won't work.</p>
 ]]></content>
   </entry>
   
@@ -28,25 +28,6 @@
     <updated>2013-02-18T14:34:00+09:00</updated>
     <id>http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict</id>
     <content type="html"><![CDATA[<p>In iOS, it seems that the one first installed will start.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[build android project with ant]]></title>
-    <link href="http://liu-w.github.com/blog/2013/02/18/build-android-project-with-ant/"/>
-    <updated>2013-02-18T12:39:00+09:00</updated>
-    <id>http://liu-w.github.com/blog/2013/02/18/build-android-project-with-ant</id>
-    <content type="html"><![CDATA[<h1>Converting to ant project</h1>
-
-<p>android update project -p <path_to_project>
-or
-android update project -s -p <path_to_project></p>
-
-<h1>solving the &#8220;dir.sdk missing&#8221; error</h1>
-
-<p>sdk.dir is missing. Make sure to generate local.properties using &#8216;android update project&#8217; or to inject it through an env var.</p>
-
-<p>android update project &#8211;target android-17 &#8230;</p>
 ]]></content>
   </entry>
   

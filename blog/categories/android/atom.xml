@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Android | Dev Memo]]></title>
+  <link href="http://liu-w.github.com/blog/categories/android/atom.xml" rel="self"/>
+  <link href="http://liu-w.github.com/"/>
+  <updated>2013-02-18T20:46:48+09:00</updated>
+  <id>http://liu-w.github.com/</id>
+  <author>
+    <name><![CDATA[Liu Wei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[What happens when url schemes conflict?]]></title>
+    <link href="http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict/"/>
+    <updated>2013-02-18T14:34:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict</id>
+    <content type="html"><![CDATA[<p>In iOS, it seems that the one first installed will start.</p>
+]]></content>
+  </entry>
+  
+</feed>
