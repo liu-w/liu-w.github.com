@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://liu-w.github.com/sitemap.xml 
