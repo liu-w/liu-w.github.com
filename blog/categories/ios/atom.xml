@@ -4,7 +4,7 @@
   <title><![CDATA[Category: iOS | Dev Memo]]></title>
   <link href="http://liu-w.github.com/blog/categories/ios/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
-  <updated>2013-02-21T11:04:42+09:00</updated>
+  <updated>2013-02-21T14:02:01+09:00</updated>
   <id>http://liu-w.github.com/</id>
   <author>
     <name><![CDATA[Liu Wei]]></name>
@@ -18,11 +18,9 @@
     <link href="http://liu-w.github.com/blog/2013/02/21/ios-device-cpus/"/>
     <updated>2013-02-21T10:51:00+09:00</updated>
     <id>http://liu-w.github.com/blog/2013/02/21/ios-device-cpus</id>
-    <content type="html"><![CDATA[<p><code>code
-ARMv7s = iPhone 5, iPad 4
-ARMv7  = iPhone 3GS, iPhone 4, iPhone 4S, iPod 3G/4G/5G, iPad, iPad 2, iPad 3, iPad Mini  
-ARMv6  = iPhone 2G/3G, iPod 1G/2G
-</code></p>
+    <content type="html"><![CDATA[<p>ARMv7s = iPhone 5, iPad 4
+ARMv7  = iPhone 3GS, iPhone 4, iPhone 4S, iPod 3G/4G/5G, iPad, iPad 2, iPad 3, iPad Mini<br/>
+ARMv6  = iPhone 2G/3G, iPod 1G/2G</p>
 ]]></content>
   </entry>
   

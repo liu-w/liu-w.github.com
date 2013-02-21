@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>build android project with ant - Dev Memo</title>
+  <title>Set UIWebView's background color - Dev Memo</title>
   <meta name="author" content="Liu Wei">
 
   
-  <meta name="description" content="Converting to ant project android update project -p or
-android update project -s -p solving the &#8220;dir.sdk missing&#8221; error sdk.dir is &hellip;">
+  <meta name="description" content="set the webview&#8217;s opaque property to NO .. and set the background of the view underneath to green. when the webview is CDVCordovaView, just set &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ android update project -s -p solving the &#8220;dir.sdk missing&#8221; error sdk
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://liu-w.github.com/blog/2013/02/18/build-android-project-with-ant/">
+  <link rel="canonical" href="http://liu-w.github.com/blog/2013/02/20/set-uiwebviews-background-color/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -68,7 +67,7 @@ android update project -s -p solving the &#8220;dir.sdk missing&#8221; error sdk
   
   <header>
     
-      <h1 class="entry-title">Build Android Project With Ant</h1>
+      <h1 class="entry-title">Set UIWebView's Background Color</h1>
     
     
       <p class="meta">
@@ -84,24 +83,16 @@ android update project -s -p solving the &#8220;dir.sdk missing&#8221; error sdk
   
 
 
-<time datetime="2013-02-18T12:39:00+09:00" pubdate data-updated="true">Feb 18<span>th</span>, 2013</time>
+<time datetime="2013-02-20T17:13:00+09:00" pubdate data-updated="true">Feb 20<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h1>Converting to ant project</h1>
+<div class="entry-content"><p>set the webview&#8217;s opaque property to NO .. and set the background of the view underneath to green.</p>
 
-<p>android update project -p <path_to_project>
-or
-android update project -s -p <path_to_project></p>
-
-<h1>solving the &#8220;dir.sdk missing&#8221; error</h1>
-
-<p>sdk.dir is missing. Make sure to generate local.properties using &#8216;android update project&#8217; or to inject it through an env var.</p>
-
-<p>android update project &#8211;target android-17 &#8230;</p>
+<p>when the webview is CDVCordovaView, just set it opaque to NO, and set the view&#8217;s background color: self.webView.backgroundColor = BACKGROUND_COLOR;</p>
 </div>
 
 
@@ -124,12 +115,12 @@ android update project -s -p <path_to_project></p>
   
 
 
-<time datetime="2013-02-18T12:39:00+09:00" pubdate data-updated="true">Feb 18<span>th</span>, 2013</time>
+<time datetime="2013-02-20T17:13:00+09:00" pubdate data-updated="true">Feb 20<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/andrioid/'>Andrioid</a>, <a class='category' href='/blog/categories/ant/'>ant</a>
+    <a class='category' href='/blog/categories/ios/'>iOS</a>
   
 </span>
 
@@ -138,7 +129,7 @@ android update project -s -p <path_to_project></p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liu-w.github.com/blog/2013/02/18/build-android-project-with-ant/" data-via="" data-counturl="http://liu-w.github.com/blog/2013/02/18/build-android-project-with-ant/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liu-w.github.com/blog/2013/02/20/set-uiwebviews-background-color/" data-via="" data-counturl="http://liu-w.github.com/blog/2013/02/20/set-uiwebviews-background-color/" >Tweet</a>
   
   
   
@@ -147,8 +138,10 @@ android update project -s -p <path_to_project></p>
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2013/02/18/why-cant-i-use-a-url-scheme-starting-with-a-number/" title="Previous Post: Why can't I use a url scheme starting with a number?">&laquo; Why can't I use a url scheme starting with a number?</a>
       
-        <a class="basic-alignment right" href="/blog/2013/02/18/what-happens-when-url-schemes-conflict/" title="Next Post: What happens when url schemes conflict?">What happens when url schemes conflict? &raquo;</a>
+      
+        <a class="basic-alignment right" href="/blog/2013/02/21/ios-device-cpus/" title="Next Post: iOS device CPUs">iOS device CPUs &raquo;</a>
       
     </p>
   </footer>

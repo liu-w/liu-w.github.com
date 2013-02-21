@@ -5,12 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>build android project with ant - Dev Memo</title>
+  <title>iOS device CPUs - Dev Memo</title>
   <meta name="author" content="Liu Wei">
 
   
-  <meta name="description" content="Converting to ant project android update project -p or
-android update project -s -p solving the &#8220;dir.sdk missing&#8221; error sdk.dir is &hellip;">
+  <meta name="description" content="ARMv7s = iPhone 5, iPad 4
+ARMv7 = iPhone 3GS, iPhone 4, iPhone 4S, iPod 3G/4G/5G, iPad, iPad 2, iPad 3, iPad Mini
+ARMv6 = iPhone 2G/3G, iPod 1G/2G
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +21,7 @@ android update project -s -p solving the &#8220;dir.sdk missing&#8221; error sdk
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://liu-w.github.com/blog/2013/02/18/build-android-project-with-ant/">
+  <link rel="canonical" href="http://liu-w.github.com/blog/2013/02/21/ios-device-cpus/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -68,7 +70,7 @@ android update project -s -p solving the &#8220;dir.sdk missing&#8221; error sdk
   
   <header>
     
-      <h1 class="entry-title">Build Android Project With Ant</h1>
+      <h1 class="entry-title">iOS Device CPUs</h1>
     
     
       <p class="meta">
@@ -84,24 +86,16 @@ android update project -s -p solving the &#8220;dir.sdk missing&#8221; error sdk
   
 
 
-<time datetime="2013-02-18T12:39:00+09:00" pubdate data-updated="true">Feb 18<span>th</span>, 2013</time>
+<time datetime="2013-02-21T10:51:00+09:00" pubdate data-updated="true">Feb 21<span>st</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h1>Converting to ant project</h1>
-
-<p>android update project -p <path_to_project>
-or
-android update project -s -p <path_to_project></p>
-
-<h1>solving the &#8220;dir.sdk missing&#8221; error</h1>
-
-<p>sdk.dir is missing. Make sure to generate local.properties using &#8216;android update project&#8217; or to inject it through an env var.</p>
-
-<p>android update project &#8211;target android-17 &#8230;</p>
+<div class="entry-content"><p>ARMv7s = iPhone 5, iPad 4
+ARMv7  = iPhone 3GS, iPhone 4, iPhone 4S, iPod 3G/4G/5G, iPad, iPad 2, iPad 3, iPad Mini<br/>
+ARMv6  = iPhone 2G/3G, iPod 1G/2G</p>
 </div>
 
 
@@ -124,12 +118,12 @@ android update project -s -p <path_to_project></p>
   
 
 
-<time datetime="2013-02-18T12:39:00+09:00" pubdate data-updated="true">Feb 18<span>th</span>, 2013</time>
+<time datetime="2013-02-21T10:51:00+09:00" pubdate data-updated="true">Feb 21<span>st</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/andrioid/'>Andrioid</a>, <a class='category' href='/blog/categories/ant/'>ant</a>
+    <a class='category' href='/blog/categories/ios/'>iOS</a>
   
 </span>
 
@@ -138,7 +132,7 @@ android update project -s -p <path_to_project></p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liu-w.github.com/blog/2013/02/18/build-android-project-with-ant/" data-via="" data-counturl="http://liu-w.github.com/blog/2013/02/18/build-android-project-with-ant/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liu-w.github.com/blog/2013/02/21/ios-device-cpus/" data-via="" data-counturl="http://liu-w.github.com/blog/2013/02/21/ios-device-cpus/" >Tweet</a>
   
   
   
@@ -147,8 +141,8 @@ android update project -s -p <path_to_project></p>
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2013/02/20/set-uiwebviews-background-color/" title="Previous Post: Set UIWebView's background color">&laquo; Set UIWebView's background color</a>
       
-        <a class="basic-alignment right" href="/blog/2013/02/18/what-happens-when-url-schemes-conflict/" title="Next Post: What happens when url schemes conflict?">What happens when url schemes conflict? &raquo;</a>
       
     </p>
   </footer>
