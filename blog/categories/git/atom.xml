@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: git | Dev Memo]]></title>
+  <link href="http://liu-w.github.com/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://liu-w.github.com/"/>
+  <updated>2013-02-22T12:11:20+09:00</updated>
+  <id>http://liu-w.github.com/</id>
+  <author>
+    <name><![CDATA[Liu Wei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Installing git autocompletion script for mac]]></title>
+    <link href="http://liu-w.github.com/blog/2013/02/22/installing-git-autocompletion-script-for-mac/"/>
+    <updated>2013-02-22T11:57:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/02/22/installing-git-autocompletion-script-for-mac</id>
+    <content type="html"><![CDATA[<p><code>bash
+curl https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+</code>
+No need to worry about what directory you're in when you run this command, it is set to go to your home directory as ~ is used with the target.</p>
+
+<p>Then I added to my ~/.bash_profile file the following 'execute if it exists' code:
+<code>bash
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

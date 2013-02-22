@@ -4,7 +4,7 @@
   <title><![CDATA[Dev Memo]]></title>
   <link href="http://liu-w.github.com/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
-  <updated>2013-02-21T14:02:01+09:00</updated>
+  <updated>2013-02-22T12:11:20+09:00</updated>
   <id>http://liu-w.github.com/</id>
   <author>
     <name><![CDATA[Liu Wei]]></name>
@@ -14,13 +14,42 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Installing git autocompletion script for mac]]></title>
+    <link href="http://liu-w.github.com/blog/2013/02/22/installing-git-autocompletion-script-for-mac/"/>
+    <updated>2013-02-22T11:57:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/02/22/installing-git-autocompletion-script-for-mac</id>
+    <content type="html"><![CDATA[<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>curl https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>No need to worry about what directory you&#8217;re in when you run this command, it is set to go to your home directory as ~ is used with the target.</p>
+
+<p>Then I added to my ~/.bash_profile file the following &#8216;execute if it exists&#8217; code:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="k">if</span> <span class="o">[</span> -f ~/.git-completion.bash <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'>  . ~/.git-completion.bash
+</span><span class='line'><span class="k">fi</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[iOS device CPUs]]></title>
     <link href="http://liu-w.github.com/blog/2013/02/21/ios-device-cpus/"/>
     <updated>2013-02-21T10:51:00+09:00</updated>
     <id>http://liu-w.github.com/blog/2013/02/21/ios-device-cpus</id>
-    <content type="html"><![CDATA[<p>ARMv7s = iPhone 5, iPad 4
-ARMv7  = iPhone 3GS, iPhone 4, iPhone 4S, iPod 3G/4G/5G, iPad, iPad 2, iPad 3, iPad Mini<br/>
-ARMv6  = iPhone 2G/3G, iPod 1G/2G</p>
+    <content type="html"><![CDATA[<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ARMv7s = iPhone 5, iPad 4
+</span><span class='line'>ARMv7  = iPhone 3GS, iPhone 4, iPhone 4S, iPod 3G/4G/5G, iPad, iPad 2, iPad 3, iPad Mini  
+</span><span class='line'>ARMv6  = iPhone 2G/3G, iPod 1G/2G</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   
@@ -31,7 +60,12 @@ ARMv6  = iPhone 2G/3G, iPod 1G/2G</p>
     <id>http://liu-w.github.com/blog/2013/02/20/set-uiwebviews-background-color</id>
     <content type="html"><![CDATA[<p>set the webview&#8217;s opaque property to NO .. and set the background of the view underneath to green.</p>
 
-<p>when the webview is CDVCordovaView, just set it opaque to NO, and set the view&#8217;s background color: self.webView.backgroundColor = BACKGROUND_COLOR;</p>
+<p>when the webview is CDVCordovaView, just set it opaque to NO, and set the view&#8217;s background color:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objective-c'><span class='line'><span class="n">self</span><span class="p">.</span><span class="n">webView</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="n">BACKGROUND_COLOR</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   
