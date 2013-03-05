@@ -4,7 +4,7 @@
   <title><![CDATA[Dev Memo]]></title>
   <link href="http://liu-w.github.com/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
-  <updated>2013-02-22T12:11:20+09:00</updated>
+  <updated>2013-03-05T16:18:16+09:00</updated>
   <id>http://liu-w.github.com/</id>
   <author>
     <name><![CDATA[Liu Wei]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Root Nexus 7 with Mac]]></title>
+    <link href="http://liu-w.github.com/blog/2013/03/05/root-nexus-7-with-mac/"/>
+    <updated>2013-03-05T15:22:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/03/05/root-nexus-7-with-mac</id>
+    <content type="html"><![CDATA[<ul>
+<li>Install android SDK if you have not.</li>
+<li>Download SuperSU(http://download.chainfire.eu/310/SuperSU/UPDATE-SuperSU-v1.04.zip) and copy it to the root of Nexus 7&#8217;s SD card.</li>
+<li>Download a recovery image(http://download2.clockworkmod.com/recoveries/recovery-clockwork-touch-6.0.2.3-grouper.img)</li>
+<li>Boot Nexus 7 into fast boot mode.</li>
+<li><h1>fastboot flash recovery recovery-clockwork-touch-6.0.2.3-grouper.img</h1></li>
+<li>After the command is executed, choose Recovery option from the Fastboot menu and boot the device into Recovery Mode.</li>
+<li>Then navigate to Install zip from SD card option and hit Power button to select it. Then use volume kyes to navigate to UPDATE-SuperSU-v1.04.zip file in tablet&#8217;s SD card and select it with Power button.</li>
+<li>Reboot</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Differences between iOS &amp; Android]]></title>
+    <link href="http://liu-w.github.com/blog/2013/03/04/differences-between-ios-and-android/"/>
+    <updated>2013-03-04T11:21:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/03/04/differences-between-ios-and-android</id>
+    <content type="html"><![CDATA[<p>Android Can&#8217;t execute network related tasks in ui thread.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Installing git autocompletion script for mac]]></title>

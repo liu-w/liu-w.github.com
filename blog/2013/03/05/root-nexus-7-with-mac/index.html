@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>What happens when url schemes conflict? - Dev Memo</title>
+  <title>Root Nexus 7 with Mac - Dev Memo</title>
   <meta name="author" content="Liu Wei">
 
   
-  <meta name="description" content="In iOS, it seems that the one first installed will start.
-">
+  <meta name="description" content="Install android SDK if you have not.
+Download SuperSU(http://download.chainfire.eu/310/SuperSU/UPDATE-SuperSU-v1.04.zip) and copy it to the root of &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict/">
+  <link rel="canonical" href="http://liu-w.github.com/blog/2013/03/05/root-nexus-7-with-mac/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">What Happens When Url Schemes Conflict?</h1>
+      <h1 class="entry-title">Root Nexus 7 With Mac</h1>
     
     
       <p class="meta">
@@ -84,14 +84,24 @@
   
 
 
-<time datetime="2013-02-18T14:34:00+09:00" pubdate data-updated="true">Feb 18<span>th</span>, 2013</time>
+<time datetime="2013-03-05T15:22:00+09:00" pubdate data-updated="true">Mar 5<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>In iOS, it seems that the one first installed will start.</p>
+<div class="entry-content"><ul>
+<li>Install android SDK if you have not.</li>
+<li>Download SuperSU(http://download.chainfire.eu/310/SuperSU/UPDATE-SuperSU-v1.04.zip) and copy it to the root of Nexus 7&#8217;s SD card.</li>
+<li>Download a recovery image(http://download2.clockworkmod.com/recoveries/recovery-clockwork-touch-6.0.2.3-grouper.img)</li>
+<li>Boot Nexus 7 into fast boot mode.</li>
+<li><h1>fastboot flash recovery recovery-clockwork-touch-6.0.2.3-grouper.img</h1></li>
+<li>After the command is executed, choose Recovery option from the Fastboot menu and boot the device into Recovery Mode.</li>
+<li>Then navigate to Install zip from SD card option and hit Power button to select it. Then use volume kyes to navigate to UPDATE-SuperSU-v1.04.zip file in tablet&#8217;s SD card and select it with Power button.</li>
+<li>Reboot</li>
+</ul>
+
 </div>
 
 
@@ -114,12 +124,12 @@
   
 
 
-<time datetime="2013-02-18T14:34:00+09:00" pubdate data-updated="true">Feb 18<span>th</span>, 2013</time>
+<time datetime="2013-03-05T15:22:00+09:00" pubdate data-updated="true">Mar 5<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/android/'>Android</a>, <a class='category' href='/blog/categories/ios/'>iOS</a>
+    <a class='category' href='/blog/categories/android/'>Android</a>, <a class='category' href='/blog/categories/rooting/'>rooting</a>
   
 </span>
 
@@ -128,7 +138,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict/" data-via="" data-counturl="http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liu-w.github.com/blog/2013/03/05/root-nexus-7-with-mac/" data-via="" data-counturl="http://liu-w.github.com/blog/2013/03/05/root-nexus-7-with-mac/" >Tweet</a>
   
   
   
@@ -137,10 +147,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/02/18/build-android-project-with-ant/" title="Previous Post: build android project with ant">&laquo; build android project with ant</a>
+        <a class="basic-alignment left" href="/blog/2013/03/04/differences-between-ios-and-android/" title="Previous Post: Differences between iOS &amp; Android">&laquo; Differences between iOS &amp; Android</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/02/18/why-cant-i-use-a-url-scheme-starting-with-a-number/" title="Next Post: Why can't I use a url scheme starting with a number?">Why can't I use a url scheme starting with a number? &raquo;</a>
       
     </p>
   </footer>

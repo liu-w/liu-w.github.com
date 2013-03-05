@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Android | Dev Memo]]></title>
-  <link href="http://liu-w.github.com/blog/categories/android/atom.xml" rel="self"/>
+  <title><![CDATA[Category: rooting | Dev Memo]]></title>
+  <link href="http://liu-w.github.com/blog/categories/rooting/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
   <updated>2013-03-05T16:18:16+09:00</updated>
   <id>http://liu-w.github.com/</id>
@@ -29,24 +29,6 @@
 <li>Reboot</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Differences between iOS &amp; Android]]></title>
-    <link href="http://liu-w.github.com/blog/2013/03/04/differences-between-ios-and-android/"/>
-    <updated>2013-03-04T11:21:00+09:00</updated>
-    <id>http://liu-w.github.com/blog/2013/03/04/differences-between-ios-and-android</id>
-    <content type="html"><![CDATA[<p>Android Can't execute network related tasks in ui thread.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What happens when url schemes conflict?]]></title>
-    <link href="http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict/"/>
-    <updated>2013-02-18T14:34:00+09:00</updated>
-    <id>http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict</id>
-    <content type="html"><![CDATA[<p>In iOS, it seems that the one first installed will start.</p>
 ]]></content>
   </entry>
   
