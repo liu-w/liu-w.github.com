@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rooting | Dev Memo]]></title>
   <link href="http://liu-w.github.com/blog/categories/rooting/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
-  <updated>2013-03-05T18:42:09+09:00</updated>
+  <updated>2013-03-05T18:43:45+09:00</updated>
   <id>http://liu-w.github.com/</id>
   <author>
     <name><![CDATA[Liu Wei]]></name>
@@ -23,11 +23,12 @@
 <li>Download <a href="http://download.chainfire.eu/310/SuperSU/UPDATE-SuperSU-v1.04.zip">SuperSU</a> and copy it to the root of Nexus 7's SD card.</li>
 <li>Download a <a href="http://download2.clockworkmod.com/recoveries/recovery-clockwork-touch-6.0.2.3-grouper.img">recovery image</a></li>
 <li>Boot Nexus 7 into fast boot mode.</li>
-<li><p><code>
+<li>Flash the recovery image using the following command.
+<code>
 fastboot flash recovery recovery-clockwork-touch-6.0.2.3-grouper.img
-</code></p></li>
+</code></li>
 <li>After the command is executed, choose Recovery option from the Fastboot menu and boot the device into Recovery Mode.</li>
-<li>Then navigate to Install zip from SD card option and hit Power button to select it. Then use volume kyes to navigate to UPDATE-SuperSU-v1.04.zip file in tablet's SD card and select it with Power button.</li>
+<li>Then navigate to Install zip from SD card option and hit Power button to select it. Then use volume keys to navigate to UPDATE-SuperSU-v1.04.zip file in tablet's SD card and select it with Power button.</li>
 <li>Reboot</li>
 </ul>
 
