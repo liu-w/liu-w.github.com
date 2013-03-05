@@ -4,7 +4,7 @@
   <title><![CDATA[Category: iOS | Dev Memo]]></title>
   <link href="http://liu-w.github.com/blog/categories/ios/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
-  <updated>2013-03-05T16:18:16+09:00</updated>
+  <updated>2013-03-05T18:37:19+09:00</updated>
   <id>http://liu-w.github.com/</id>
   <author>
     <name><![CDATA[Liu Wei]]></name>
@@ -19,6 +19,21 @@
     <updated>2013-03-04T11:21:00+09:00</updated>
     <id>http://liu-w.github.com/blog/2013/03/04/differences-between-ios-and-android</id>
     <content type="html"><![CDATA[<p>Android Can't execute network related tasks in ui thread.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[UIWebView lost basic auth]]></title>
+    <link href="http://liu-w.github.com/blog/2013/02/25/uiwebview-lost-basic-auth/"/>
+    <updated>2013-02-25T08:31:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/02/25/uiwebview-lost-basic-auth</id>
+    <content type="html"><![CDATA[<p>method in</p>
+
+<p>http://stackoverflow.com/questions/1769888/how-to-display-the-authentication-challenge-in-uiwebview</p>
+
+<p>causes a problem.</p>
+
+<p>to be continued</p>
 ]]></content>
   </entry>
   
@@ -55,15 +70,6 @@ self.webView.backgroundColor = BACKGROUND_COLOR;
     <updated>2013-02-18T16:00:00+09:00</updated>
     <id>http://liu-w.github.com/blog/2013/02/18/why-cant-i-use-a-url-scheme-starting-with-a-number</id>
     <content type="html"><![CDATA[<p>It seems ok in iOS 5, but in iOS 6, it won't work.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What happens when url schemes conflict?]]></title>
-    <link href="http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict/"/>
-    <updated>2013-02-18T14:34:00+09:00</updated>
-    <id>http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict</id>
-    <content type="html"><![CDATA[<p>In iOS, it seems that the one first installed will start.</p>
 ]]></content>
   </entry>
   

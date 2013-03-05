@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: UIWebView | Dev Memo]]></title>
+  <link href="http://liu-w.github.com/blog/categories/uiwebview/atom.xml" rel="self"/>
+  <link href="http://liu-w.github.com/"/>
+  <updated>2013-03-05T18:37:19+09:00</updated>
+  <id>http://liu-w.github.com/</id>
+  <author>
+    <name><![CDATA[Liu Wei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[UIWebView lost basic auth]]></title>
+    <link href="http://liu-w.github.com/blog/2013/02/25/uiwebview-lost-basic-auth/"/>
+    <updated>2013-02-25T08:31:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/02/25/uiwebview-lost-basic-auth</id>
+    <content type="html"><![CDATA[<p>method in</p>
+
+<p>http://stackoverflow.com/questions/1769888/how-to-display-the-authentication-challenge-in-uiwebview</p>
+
+<p>causes a problem.</p>
+
+<p>to be continued</p>
+]]></content>
+  </entry>
+  
+</feed>
