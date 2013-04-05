@@ -4,7 +4,7 @@
   <title><![CDATA[Wei's Memo]]></title>
   <link href="http://liu-w.github.com/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
-  <updated>2013-04-05T12:59:07+09:00</updated>
+  <updated>2013-04-05T13:01:56+09:00</updated>
   <id>http://liu-w.github.com/</id>
   <author>
     <name><![CDATA[Liu Wei]]></name>
@@ -20,17 +20,23 @@
     <id>http://liu-w.github.com/blog/2013/04/05/rename-multiple-files-at-once</id>
     <content type="html"><![CDATA[<p>As an iOS developer, sometimes you may want to rename the following files</p>
 
-<p>header02.png
-header02@2x.png
-header02_down.png
-header02_down@2x.png</p>
+<ul>
+<li>header02.png</li>
+<li>header02@2x.png</li>
+<li>header02_down.png</li>
+<li>header02_down@2x.png</li>
+</ul>
+
 
 <p>to</p>
 
-<p>header-backbtn.png
-header-backbtn@2x.png
-header-backbtn_down.png
-header-backbtn_down@2x.png</p>
+<ul>
+<li>header-backbtn.png</li>
+<li>header-backbtn@2x.png</li>
+<li>header-backbtn_down.png</li>
+<li>header-backbtn_down@2x.png</li>
+</ul>
+
 
 <p>Try this command:</p>
 
