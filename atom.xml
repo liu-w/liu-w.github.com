@@ -4,7 +4,7 @@
   <title><![CDATA[Wei's Memo]]></title>
   <link href="http://liu-w.github.com/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
-  <updated>2013-03-05T18:46:19+09:00</updated>
+  <updated>2013-04-05T12:49:44+09:00</updated>
   <id>http://liu-w.github.com/</id>
   <author>
     <name><![CDATA[Liu Wei]]></name>
@@ -12,6 +12,68 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Rename Multiple Files At Once]]></title>
+    <link href="http://liu-w.github.com/blog/2013/04/05/rename-multiple-files-at-once/"/>
+    <updated>2013-04-05T12:46:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/04/05/rename-multiple-files-at-once</id>
+    <content type="html"><![CDATA[<p>As an iOS developer, sometimes you may want to rename the following files</p>
+
+<p>header02.png
+header02@2x.png
+header02_down.png
+header02_down@2x.png</p>
+
+<p>to</p>
+
+<p>header-backbtn.png
+header-backbtn@2x.png
+header-backbtn_down.png
+header-backbtn_down@2x.png</p>
+
+<p>Try this command:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>for file in header02*; do mv $file ${file/header02/header-backbtn}; done</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Apache Proxy to Local Port]]></title>
+    <link href="http://liu-w.github.com/blog/2013/03/30/apache-proxy-to-local-port/"/>
+    <updated>2013-03-30T17:11:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/03/30/apache-proxy-to-local-port</id>
+    <content type="html"><![CDATA[<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;VirtualHost *&gt;
+</span><span class='line'>        ServerName www.example.com
+</span><span class='line'>        ProxyPass / http://localhost:3000/
+</span><span class='line'>        ProxyPassReverse / http://localhost:3000/
+</span><span class='line'>        ProxyPreserveHost On
+</span><span class='line'>&lt;/VirtualHost&gt;</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[rails meets iOS]]></title>
+    <link href="http://liu-w.github.com/blog/2013/03/23/rails-meets-ios/"/>
+    <updated>2013-03-23T16:06:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/03/23/rails-meets-ios</id>
+    <content type="html"><![CDATA[<p>AFIncrementalStore
+AFNetworking</p>
+
+<p>RestKit</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Root Nexus 7 with Mac]]></title>

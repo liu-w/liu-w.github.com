@@ -5,11 +5,17 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Andrioid - Wei's Memo</title>
+  <title>Apache Proxy to Local Port - Wei's Memo</title>
   <meta name="author" content="Liu Wei">
 
   
-  <meta name="description" content="Category: Andrioid">
+  <meta name="description" content="1
+2
+3
+4
+5
+6
+&lt;VirtualHost *&gt; ServerName www.example.com ProxyPass / http://localhost:3000/ ProxyPassReverse / http://localhost:3000/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://liu-w.github.com/blog/categories/andrioid/">
+  <link rel="canonical" href="http://liu-w.github.com/blog/2013/03/30/apache-proxy-to-local-port/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -63,35 +69,98 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Andrioid</h1>
+    
+      <h1 class="entry-title">Apache Proxy to Local Port</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-30T17:11:00+09:00" pubdate data-updated="true">Mar 30<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
-
-  
-  <h2>2013</h2>
-
-<article>
-  
-<h1><a href="/blog/2013/02/18/build-android-project-with-ant/">build android project with ant</a></h1>
-<time datetime="2013-02-18T12:39:00+09:00" pubdate><span class='month'>Feb</span> <span class='day'>18</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/andrioid/'>Andrioid</a>, <a class='category' href='/blog/categories/ant/'>ant</a></span>
-</footer>
-
-
-</article>
+<div class="entry-content"><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;VirtualHost *&gt;
+</span><span class='line'>        ServerName www.example.com
+</span><span class='line'>        ProxyPass / http://localhost:3000/
+</span><span class='line'>        ProxyPassReverse / http://localhost:3000/
+</span><span class='line'>        ProxyPreserveHost On
+</span><span class='line'>&lt;/VirtualHost&gt;</span></code></pre></td></tr></table></div></figure>
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Liu Wei</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-30T17:11:00+09:00" pubdate data-updated="true">Mar 30<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/apache/'>apache</a>, <a class='category' href='/blog/categories/proxy/'>proxy</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liu-w.github.com/blog/2013/03/30/apache-proxy-to-local-port/" data-via="" data-counturl="http://liu-w.github.com/blog/2013/03/30/apache-proxy-to-local-port/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/03/23/rails-meets-ios/" title="Previous Post: rails meets iOS">&laquo; rails meets iOS</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/04/05/rename-multiple-files-at-once/" title="Next Post: Rename Multiple Files At Once">Rename Multiple Files At Once &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
 
 </div>

@@ -9,10 +9,10 @@
   <meta name="author" content="Liu Wei">
 
   
-  <meta name="description" content="Install android SDK if you have not.
-Download SuperSU and copy it to the root of Nexus 7&#8217;s SD card.
-Download a recovery image
-Boot Nexus 7 &hellip;">
+  <meta name="description" content="As an iOS developer, sometimes you may want to rename the following files header02.png
+header02@2x.png
+header02_down.png
+header02_down@2x.png to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +67,149 @@ Boot Nexus 7 &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/05/rename-multiple-files-at-once/">Rename Multiple Files at Once</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-05T12:46:00+09:00" pubdate data-updated="true">Apr 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>As an iOS developer, sometimes you may want to rename the following files</p>
+
+<p>header02.png
+header02@2x.png
+header02_down.png
+header02_down@2x.png</p>
+
+<p>to</p>
+
+<p>header-backbtn.png
+header-backbtn@2x.png
+header-backbtn_down.png
+header-backbtn_down@2x.png</p>
+
+<p>Try this command:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>for file in header02*; do mv $file ${file/header02/header-backbtn}; done</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/30/apache-proxy-to-local-port/">Apache Proxy to Local Port</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-30T17:11:00+09:00" pubdate data-updated="true">Mar 30<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;VirtualHost *&gt;
+</span><span class='line'>        ServerName www.example.com
+</span><span class='line'>        ProxyPass / http://localhost:3000/
+</span><span class='line'>        ProxyPassReverse / http://localhost:3000/
+</span><span class='line'>        ProxyPreserveHost On
+</span><span class='line'>&lt;/VirtualHost&gt;</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/23/rails-meets-ios/">Rails Meets iOS</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-23T16:06:00+09:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>AFIncrementalStore
+AFNetworking</p>
+
+<p>RestKit</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -373,89 +516,9 @@ Boot Nexus 7 &hellip;">
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/18/what-happens-when-url-schemes-conflict/">What Happens When Url Schemes Conflict?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-18T14:34:00+09:00" pubdate data-updated="true">Feb 18<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>In iOS, it seems that the one first installed will start.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/18/build-android-project-with-ant/">Build Android Project With Ant</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-18T12:39:00+09:00" pubdate data-updated="true">Feb 18<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Converting to ant project</h1>
-
-<p>android update project -p <path_to_project>
-or
-android update project -s -p <path_to_project></p>
-
-<h1>solving the &#8220;dir.sdk missing&#8221; error</h1>
-
-<p>sdk.dir is missing. Make sure to generate local.properties using &#8216;android update project&#8217; or to inject it through an env var.</p>
-
-<p>android update project &#8211;target android-17 &#8230;</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/2/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -468,23 +531,23 @@ android update project -s -p <path_to_project></p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/04/05/rename-multiple-files-at-once/">Rename Multiple Files At Once</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/30/apache-proxy-to-local-port/">Apache Proxy to Local Port</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/23/rails-meets-ios/">rails meets iOS</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/03/05/root-nexus-7-with-mac/">Root Nexus 7 with Mac</a>
       </li>
     
       <li class="post">
         <a href="/blog/2013/03/04/differences-between-ios-and-android/">Differences between iOS &amp; Android</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/25/uiwebview-lost-basic-auth/">UIWebView lost basic auth</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/22/installing-git-autocompletion-script-for-mac/">Installing git autocompletion script for mac</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/21/ios-device-cpus/">iOS device CPUs</a>
       </li>
     
   </ul>
