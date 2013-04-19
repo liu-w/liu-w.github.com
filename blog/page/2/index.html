@@ -9,8 +9,7 @@
   <meta name="author" content="Liu Wei">
 
   
-  <meta name="description" content="It seems ok in iOS 5, but in iOS 6, it won&#8217;t work.
-">
+  <meta name="description" content="set the webview&#8217;s opaque property to NO .. and set the background of the view underneath to green. when the webview is CDVCordovaView, just set &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +76,49 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/20/set-uiwebviews-background-color/">Set UIWebView&#8217;s Background Color</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-20T17:13:00+09:00" pubdate data-updated="true">Feb 20<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>set the webview&#8217;s opaque property to NO .. and set the background of the view underneath to green.</p>
+
+<p>when the webview is CDVCordovaView, just set it opaque to NO, and set the view&#8217;s background color:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objective-c'><span class='line'><span class="n">self</span><span class="p">.</span><span class="n">webView</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="n">BACKGROUND_COLOR</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -211,6 +253,10 @@ android update project -s -p <path_to_project></p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/04/19/take-screenshot-of-android-devices-from-command-line/">Take screenshot of Android devices from command line</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/04/09/calabash-android-console/">calabash-android console</a>
       </li>
     
@@ -224,10 +270,6 @@ android update project -s -p <path_to_project></p>
     
       <li class="post">
         <a href="/blog/2013/03/23/rails-meets-ios/">rails meets iOS</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/05/root-nexus-7-with-mac/">Root Nexus 7 with Mac</a>
       </li>
     
   </ul>

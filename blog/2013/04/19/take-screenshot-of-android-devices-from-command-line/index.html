@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>What happens when url schemes conflict? - Wei's Memo</title>
+  <title>Take screenshot of Android devices from command line - Wei's Memo</title>
   <meta name="author" content="Liu Wei">
 
   
-  <meta name="description" content="In iOS, it seems that the one first installed will start.
-">
+  <meta name="description" content="I found that calabash-android is using this jar file to take screenshots. screenshotTaker.jar To take a screenshot: You need to install android sdk &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict/">
+  <link rel="canonical" href="http://liu-w.github.com/blog/2013/04/19/take-screenshot-of-android-devices-from-command-line/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -80,7 +79,7 @@
   
   <header>
     
-      <h1 class="entry-title">What Happens When Url Schemes Conflict?</h1>
+      <h1 class="entry-title">Take Screenshot of Android Devices From Command Line</h1>
     
     
       <p class="meta">
@@ -96,14 +95,38 @@
   
 
 
-<time datetime="2013-02-18T14:34:00+09:00" pubdate data-updated="true">Feb 18<span>th</span>, 2013</time>
+<time datetime="2013-04-19T18:11:00+09:00" pubdate data-updated="true">Apr 19<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>In iOS, it seems that the one first installed will start.</p>
+<div class="entry-content"><p>I found that calabash-android is using <a href="https://github.com/calabash/calabash-android/raw/master/ruby-gem/lib/calabash-android/lib/screenshotTaker.jar">this jar file</a> to take screenshots.</p>
+
+<p><a href="https://github.com/calabash/calabash-android/raw/master/ruby-gem/lib/calabash-android/lib/screenshotTaker.jar">screenshotTaker.jar</a></p>
+
+<p>To take a screenshot:</p>
+
+<ul>
+<li>You need to install <a href="http://developer.android.com/sdk/index.html">android sdk tools</a>.</li>
+<li>Set ANDROID_HOME to the path of the installed sdk(or you can set it from the command line).</li>
+<li>Download <a href="https://github.com/calabash/calabash-android/raw/master/ruby-gem/lib/calabash-android/lib/screenshotTaker.jar">screenshotTaker.jar</a>.</li>
+<li>Turn on debug mode of your device and connect it to your machine through usb.</li>
+<li>Run the following command:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>java -jar screenshotTaker.jar &lt;screenshot-filename.png&gt; [device-args]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>device-args will be forward to adb command, so you specify the serial-no when you have multiple devices connected.
+For example:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ANDROID_HOME=/DevTools/adt-bundle-mac-x86_64/sdk/ java -jar screenShotTaker.jar a.png -s 355659040404653</span></code></pre></td></tr></table></div></figure>
+
 </div>
 
 
@@ -126,12 +149,12 @@
   
 
 
-<time datetime="2013-02-18T14:34:00+09:00" pubdate data-updated="true">Feb 18<span>th</span>, 2013</time>
+<time datetime="2013-04-19T18:11:00+09:00" pubdate data-updated="true">Apr 19<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/android/'>Android</a>, <a class='category' href='/blog/categories/ios/'>iOS</a>
+    <a class='category' href='/blog/categories/android/'>android</a>
   
 </span>
 
@@ -140,7 +163,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict/" data-via="lwsoftware" data-counturl="http://liu-w.github.com/blog/2013/02/18/what-happens-when-url-schemes-conflict/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liu-w.github.com/blog/2013/04/19/take-screenshot-of-android-devices-from-command-line/" data-via="lwsoftware" data-counturl="http://liu-w.github.com/blog/2013/04/19/take-screenshot-of-android-devices-from-command-line/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -153,10 +176,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/02/18/build-android-project-with-ant/" title="Previous Post: build android project with ant">&laquo; build android project with ant</a>
+        <a class="basic-alignment left" href="/blog/2013/04/09/calabash-android-console/" title="Previous Post: calabash-android console">&laquo; calabash-android console</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/02/18/why-cant-i-use-a-url-scheme-starting-with-a-number/" title="Next Post: Why can't I use a url scheme starting with a number?">Why can't I use a url scheme starting with a number? &raquo;</a>
       
     </p>
   </footer>

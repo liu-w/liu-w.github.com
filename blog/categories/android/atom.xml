@@ -4,7 +4,7 @@
   <title><![CDATA[Category: android | Wei's Memo]]></title>
   <link href="http://liu-w.github.com/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
-  <updated>2013-04-09T19:14:55+09:00</updated>
+  <updated>2013-04-19T18:27:33+09:00</updated>
   <id>http://liu-w.github.com/</id>
   <author>
     <name><![CDATA[Liu Wei]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Take screenshot of Android devices from command line]]></title>
+    <link href="http://liu-w.github.com/blog/2013/04/19/take-screenshot-of-android-devices-from-command-line/"/>
+    <updated>2013-04-19T18:11:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/04/19/take-screenshot-of-android-devices-from-command-line</id>
+    <content type="html"><![CDATA[<p>I found that calabash-android is using <a href="https://github.com/calabash/calabash-android/raw/master/ruby-gem/lib/calabash-android/lib/screenshotTaker.jar">this jar file</a> to take screenshots.</p>
+
+<p><a href="https://github.com/calabash/calabash-android/raw/master/ruby-gem/lib/calabash-android/lib/screenshotTaker.jar">screenshotTaker.jar</a></p>
+
+<p>To take a screenshot:</p>
+
+<ul>
+<li>You need to install <a href="http://developer.android.com/sdk/index.html">android sdk tools</a>.</li>
+<li>Set ANDROID_HOME to the path of the installed sdk(or you can set it from the command line).</li>
+<li>Download <a href="https://github.com/calabash/calabash-android/raw/master/ruby-gem/lib/calabash-android/lib/screenshotTaker.jar">screenshotTaker.jar</a>.</li>
+<li>Turn on debug mode of your device and connect it to your machine through usb.</li>
+<li>Run the following command:</li>
+</ul>
+
+
+<p><code>
+java -jar screenshotTaker.jar &lt;screenshot-filename.png&gt; [device-args]
+</code></p>
+
+<p>device-args will be forward to adb command, so you specify the serial-no when you have multiple devices connected.
+For example:</p>
+
+<p><code>
+ANDROID_HOME=/DevTools/adt-bundle-mac-x86_64/sdk/ java -jar screenShotTaker.jar a.png -s 355659040404653
+</code></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[calabash-android console]]></title>
@@ -22,6 +55,13 @@
 
 <p><code>
 calabash-android console &lt;apk&gt;
+</code></p>
+
+<p>To start the app, use the following command.</p>
+
+<p><code>
+irb(main):005:0&gt; start_test_server_in_background
+nil
 </code></p>
 ]]></content>
   </entry>
