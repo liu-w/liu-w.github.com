@@ -4,7 +4,7 @@
   <title><![CDATA[Category: android | Wei's Memo]]></title>
   <link href="http://liu-w.github.com/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
-  <updated>2013-04-19T18:27:33+09:00</updated>
+  <updated>2013-04-19T18:34:42+09:00</updated>
   <id>http://liu-w.github.com/</id>
   <author>
     <name><![CDATA[Liu Wei]]></name>
@@ -37,11 +37,11 @@
 java -jar screenshotTaker.jar &lt;screenshot-filename.png&gt; [device-args]
 </code></p>
 
-<p>device-args will be forward to adb command, so you specify the serial-no when you have multiple devices connected.
+<p>device-args will be forward to adb command, so you can specify the serial-no when you have multiple devices connected.
 For example:</p>
 
 <p><code>
-ANDROID_HOME=/DevTools/adt-bundle-mac-x86_64/sdk/ java -jar screenShotTaker.jar a.png -s 355659040404653
+ANDROID_HOME=/DevTools/adt-bundle-mac-x86_64/sdk/ java -jar screenshotTaker.jar a.png -s 355659040404653
 </code></p>
 ]]></content>
   </entry>
