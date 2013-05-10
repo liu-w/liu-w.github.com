@@ -63,12 +63,18 @@
         <lastmod>2013-04-19T18:34:32+09:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://liu-w.github.com/blog/2013/05/10/ruby-script-for-taking-android-screenshot/
+        </loc>
+        <lastmod>2013-05-10T15:00:46+09:00</lastmod>
+    </url>
+    <url>
         <loc>http://liu-w.github.com/blog/archives/</loc>
-        <lastmod>2013-04-19T18:34:32+09:00</lastmod>
+        <lastmod>2013-05-10T15:00:46+09:00</lastmod>
     </url>
     <url>
         <loc>http://liu-w.github.com/</loc>
-        <lastmod>2013-04-19T18:34:32+09:00</lastmod>
+        <lastmod>2013-05-10T15:00:46+09:00</lastmod>
     </url>
     <url>
         <loc>http://liu-w.github.com/robots.txt</loc>

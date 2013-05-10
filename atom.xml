@@ -4,7 +4,7 @@
   <title><![CDATA[Wei's Memo]]></title>
   <link href="http://liu-w.github.com/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
-  <updated>2013-04-19T18:34:42+09:00</updated>
+  <updated>2013-05-10T15:01:01+09:00</updated>
   <id>http://liu-w.github.com/</id>
   <author>
     <name><![CDATA[Liu Wei]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby script for taking android screenshot]]></title>
+    <link href="http://liu-w.github.com/blog/2013/05/10/ruby-script-for-taking-android-screenshot/"/>
+    <updated>2013-05-10T14:57:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/05/10/ruby-script-for-taking-android-screenshot</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/leohoo/auto-screenshot-android">This ruby script</a> takes screenshots of all connected android devices.</p>
+
+<p>Prepare the environment:</p>
+
+<ul>
+<li>Install <a href="http://developer.android.com/sdk/index.html">android sdk</a> if you have not installed it yet.</li>
+<li>Set <code>ANDROID_HOME=&lt;path-to-android-sdk&gt;</code></li>
+<li>Install the package:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@github.com:leohoo/auto-screenshot-android.git
+</span><span class='line'>cd auto-screenshot-android
+</span><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Connect android devices to your machine through usb.</li>
+<li>Turn on debug mode of the devices, check the &#8220;Stay awake&#8221; option.</li>
+</ul>
+
+
+<p>Run the following command to take screenshots of all the devices:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby browse-and-capture.rb "http://24log.jp/"</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Take screenshot of Android devices from command line]]></title>

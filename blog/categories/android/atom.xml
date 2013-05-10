@@ -4,7 +4,7 @@
   <title><![CDATA[Category: android | Wei's Memo]]></title>
   <link href="http://liu-w.github.com/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
-  <updated>2013-04-19T18:34:42+09:00</updated>
+  <updated>2013-05-10T15:01:01+09:00</updated>
   <id>http://liu-w.github.com/</id>
   <author>
     <name><![CDATA[Liu Wei]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby script for taking android screenshot]]></title>
+    <link href="http://liu-w.github.com/blog/2013/05/10/ruby-script-for-taking-android-screenshot/"/>
+    <updated>2013-05-10T14:57:00+09:00</updated>
+    <id>http://liu-w.github.com/blog/2013/05/10/ruby-script-for-taking-android-screenshot</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/leohoo/auto-screenshot-android">This ruby script</a> takes screenshots of all connected android devices.</p>
+
+<p>Prepare the environment:</p>
+
+<ul>
+<li>Install <a href="http://developer.android.com/sdk/index.html">android sdk</a> if you have not installed it yet.</li>
+<li>Set <code>ANDROID_HOME=&lt;path-to-android-sdk&gt;</code></li>
+<li>Install the package:</li>
+</ul>
+
+
+<p><code>
+git clone git@github.com:leohoo/auto-screenshot-android.git
+cd auto-screenshot-android
+bundle install
+</code></p>
+
+<ul>
+<li>Connect android devices to your machine through usb.</li>
+<li>Turn on debug mode of the devices, check the "Stay awake" option.</li>
+</ul>
+
+
+<p>Run the following command to take screenshots of all the devices:</p>
+
+<p><code>
+ruby browse-and-capture.rb "http://24log.jp/"
+</code></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Take screenshot of Android devices from command line]]></title>
