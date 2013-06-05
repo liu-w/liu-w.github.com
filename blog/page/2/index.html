@@ -10,10 +10,7 @@
 
   
   <meta name="description" content="1
-2
-3
-ARMv7s = iPhone 5, iPad 4
-ARMv7 = iPhone 3GS, iPhone 4, iPhone 4S, iPod 3G/4G/5G, iPad, iPad 2, iPad 3, iPad Mini ARMv6 = iPhone 2G/3G, iPod 1G &hellip;">
+curl https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash No need to worry about what directory &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +77,58 @@ ARMv7 = iPhone 3GS, iPhone 4, iPhone 4S, iPod 3G/4G/5G, iPad, iPad 2, iPad 3, iP
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/22/installing-git-autocompletion-script-for-mac/">Installing Git Autocompletion Script for Mac</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-22T11:57:00+09:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>curl https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>No need to worry about what directory you&#8217;re in when you run this command, it is set to go to your home directory as ~ is used with the target.</p>
+
+<p>Then I added to my ~/.bash_profile file the following &#8216;execute if it exists&#8217; code:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="k">if</span> <span class="o">[</span> -f ~/.git-completion.bash <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'>  . ~/.git-completion.bash
+</span><span class='line'><span class="k">fi</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -299,6 +348,10 @@ android update project -s -p <path_to_project></p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/06/05/mac-ip-forwarding/">Mac ip forwarding</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/10/ruby-script-for-taking-android-screenshot/">Ruby script for taking android screenshot</a>
       </li>
     
@@ -312,10 +365,6 @@ android update project -s -p <path_to_project></p>
     
       <li class="post">
         <a href="/blog/2013/04/05/rename-multiple-files-at-once/">Rename Multiple Files At Once</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/30/apache-proxy-to-local-port/">Apache Proxy to Local Port</a>
       </li>
     
   </ul>
