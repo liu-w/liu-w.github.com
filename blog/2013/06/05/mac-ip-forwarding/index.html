@@ -9,8 +9,12 @@
   <meta name="author" content="Liu Wei">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="en0 is the ethernet
+en1 is wifi 1
+2
+3
+sudo ipfw add divert natd all from any to any via en0
+sudo ipfw add divert natd all from any to any via en1 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -103,7 +107,16 @@
   </header>
 
 
-<div class="entry-content">
+<div class="entry-content"><p>en0 is the ethernet
+en1 is wifi</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ipfw add divert natd all from any to any via en0
+</span><span class='line'>sudo ipfw add divert natd all from any to any via en1
+</span><span class='line'>sudo natd -interface en0 </span></code></pre></td></tr></table></div></figure>
+
 </div>
 
 
