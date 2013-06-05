@@ -4,7 +4,7 @@
   <title><![CDATA[Category: route | Wei's Memo]]></title>
   <link href="http://liu-w.github.com/blog/categories/route/atom.xml" rel="self"/>
   <link href="http://liu-w.github.com/"/>
-  <updated>2013-06-05T18:48:50+09:00</updated>
+  <updated>2013-06-05T19:33:20+09:00</updated>
   <id>http://liu-w.github.com/</id>
   <author>
     <name><![CDATA[Liu Wei]]></name>
@@ -18,9 +18,8 @@
     <link href="http://liu-w.github.com/blog/2013/06/05/mac-ip-forwarding/"/>
     <updated>2013-06-05T18:38:00+09:00</updated>
     <id>http://liu-w.github.com/blog/2013/06/05/mac-ip-forwarding</id>
-    <content type="html"><![CDATA[<p>en0 is the ethernet</p>
-
-<p>en1 is wifi
+    <content type="html"><![CDATA[<p>My mac's internet sharing is not working. After a few days of googling and fiddling with the command lines, I found a solution to fix it.<br/>
+en0 is the ethernet; en1 is wifi
 <code>
 sudo ipfw add divert natd all from any to any via en0
 sudo ipfw add divert natd all from any to any via en1
