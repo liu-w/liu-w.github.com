@@ -9,8 +9,7 @@
   <meta name="author" content="Liu Wei">
 
   
-  <meta name="description" content="My mac&#8217;s internet sharing is not working. After a few days of googling and fiddling with the command lines, I found a solution to fix it.
-en0 &hellip;">
+  <meta name="description" content="Android emulator is VERY slow, because it emulates an ARM processor. Install VirtualBox Install VirtualBox if you have not. Download the binary here &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +76,102 @@ en0 &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/07/run-android-in-virtualbox/">Run Android in VirtualBox</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-07T17:48:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Android emulator is VERY slow, because it emulates an ARM processor.</p>
+
+<h2>Install VirtualBox</h2>
+
+<p>Install VirtualBox if you have not. Download the binary <a href="https://www.virtualbox.org/wiki/Downloads">here</a>.</p>
+
+<h2>Download the Android x86 ISO file</h2>
+
+<p>Download an ISO file <a href="http://www.android-x86.org/download">here</a></p>
+
+<h2>Create Your Android vm in VirtualBox Manager</h2>
+
+<p> Create a vm with 2G+ hard disk, from storage options mount the iso as the cd/dvd. Use bridged network.</p>
+
+<h2>Add custom screen sizes</h2>
+
+<p>If you want to android in portrait mode (i.e., a phone), use the following command to add a custom resolution to the .vbox file.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>VBoxManage setextradata "YourVMName" "CustomVideoMode1" "480x800x16"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If the vm is running, you must poweroff and start the virtual machine to load the changed configuration (i.e., a simple reboot may not work)</p>
+
+<h2>Boot the virtual machine and choose &#8220;Installation - Install Android-x86 to harddisk&#8221;</h2>
+
+<ul>
+<li>Create partition, format it with ext3</li>
+<li>install boot loader GRUB</li>
+<li>mount system as readwrite</li>
+</ul>
+
+
+<h2>Edit the grub menu</h2>
+
+<p>Boot the vm and start in debug mode.
+If /dev/sda1 is not mount in rw mode, <code>mount -o remount,rw /mnt</code>
+edit the /mnt/grub/menu.lst file, append the following to the kernel parameters.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>DPI=240 UVESA_MODE=480x800 </span></code></pre></td></tr></table></div></figure>
+
+
+<p>or</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>DPI=240 vga=ask </span></code></pre></td></tr></table></div></figure>
+
+
+<p> (you can choose the screen size on boot)</p>
+
+<h2>Get the IP address of the emulator</h2>
+
+<p>Press Alt&lt;+F1, you will get a console. Type <code>netcfg</code> and write down the ip address. Press Alt+F4 to go back to GUI.</p>
+
+<h2>Connect with adb</h2>
+
+<p><code>adb connect [ip of the emulator]</code>
+Then the emulator will show up in <code>adb devices</code></p>
+
+<p>Host+U is the sleep/awake button.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -535,48 +630,6 @@ AFNetworking</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/25/uiwebview-lost-basic-auth/">UIWebView Lost Basic Auth</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-25T08:31:00+09:00" pubdate data-updated="true">Feb 25<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>method in</p>
-
-<p>http://stackoverflow.com/questions/1769888/how-to-display-the-authentication-challenge-in-uiwebview</p>
-
-<p>causes a problem.</p>
-
-<p>to be continued</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -592,6 +645,10 @@ AFNetworking</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/07/07/run-android-in-virtualbox/">Run Android in VirtualBox</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/06/05/mac-ip-forwarding/">Mac ip forwarding</a>
       </li>
     
@@ -605,10 +662,6 @@ AFNetworking</p>
     
       <li class="post">
         <a href="/blog/2013/04/09/calabash-android-console/">calabash-android console</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/05/rename-multiple-files-at-once/">Rename Multiple Files At Once</a>
       </li>
     
   </ul>
@@ -679,7 +732,7 @@ AFNetworking</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Liu Wei -
+  Copyright &copy; 2014 - Liu Wei -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

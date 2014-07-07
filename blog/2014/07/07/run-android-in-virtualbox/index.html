@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: ruby - Wei's Memo</title>
+  <title>Run Android in VirtualBox - Wei's Memo</title>
   <meta name="author" content="Liu Wei">
 
   
-  <meta name="description" content="Category: ruby">
+  <meta name="description" content="Android emulator is VERY slow, because it emulates an ARM processor. Install VirtualBox Install VirtualBox if you have not. Download the binary here &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://liu-w.github.com/blog/categories/ruby/">
+  <link rel="canonical" href="http://liu-w.github.com/blog/2014/07/07/run-android-in-virtualbox/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -75,35 +75,148 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Ruby</h1>
+    
+      <h1 class="entry-title">Run Android in VirtualBox</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-07T17:48:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2014</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>Android emulator is VERY slow, because it emulates an ARM processor.</p>
 
-  
-  <h2>2013</h2>
+<h2>Install VirtualBox</h2>
 
-<article>
-  
-<h1><a href="/blog/2013/05/10/ruby-script-for-taking-android-screenshot/">Ruby script for taking android screenshot</a></h1>
-<time datetime="2013-05-10T14:57:00+09:00" pubdate><span class='month'>May</span> <span class='day'>10</span> <span class='year'>2013</span></time>
+<p>Install VirtualBox if you have not. Download the binary <a href="https://www.virtualbox.org/wiki/Downloads">here</a>.</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/android/'>android</a>, <a class='category' href='/blog/categories/calabash/'>calabash</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
-</footer>
+<h2>Download the Android x86 ISO file</h2>
+
+<p>Download an ISO file <a href="http://www.android-x86.org/download">here</a></p>
+
+<h2>Create Your Android vm in VirtualBox Manager</h2>
+
+<p> Create a vm with 2G+ hard disk, from storage options mount the iso as the cd/dvd. Use bridged network.</p>
+
+<h2>Add custom screen sizes</h2>
+
+<p>If you want to android in portrait mode (i.e., a phone), use the following command to add a custom resolution to the .vbox file.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>VBoxManage setextradata "YourVMName" "CustomVideoMode1" "480x800x16"</span></code></pre></td></tr></table></div></figure>
 
 
-</article>
+<p>If the vm is running, you must poweroff and start the virtual machine to load the changed configuration (i.e., a simple reboot may not work)</p>
 
+<h2>Boot the virtual machine and choose &#8220;Installation - Install Android-x86 to harddisk&#8221;</h2>
+
+<ul>
+<li>Create partition, format it with ext3</li>
+<li>install boot loader GRUB</li>
+<li>mount system as readwrite</li>
+</ul>
+
+
+<h2>Edit the grub menu</h2>
+
+<p>Boot the vm and start in debug mode.
+If /dev/sda1 is not mount in rw mode, <code>mount -o remount,rw /mnt</code>
+edit the /mnt/grub/menu.lst file, append the following to the kernel parameters.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>DPI=240 UVESA_MODE=480x800 </span></code></pre></td></tr></table></div></figure>
+
+
+<p>or</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>DPI=240 vga=ask </span></code></pre></td></tr></table></div></figure>
+
+
+<p> (you can choose the screen size on boot)</p>
+
+<h2>Get the IP address of the emulator</h2>
+
+<p>Press Alt&lt;+F1, you will get a console. Type <code>netcfg</code> and write down the ip address. Press Alt+F4 to go back to GUI.</p>
+
+<h2>Connect with adb</h2>
+
+<p><code>adb connect [ip of the emulator]</code>
+Then the emulator will show up in <code>adb devices</code></p>
+
+<p>Host+U is the sleep/awake button.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Liu Wei</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-07T17:48:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/android/'>Android</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liu-w.github.com/blog/2014/07/07/run-android-in-virtualbox/" data-via="lwsoftware" data-counturl="http://liu-w.github.com/blog/2014/07/07/run-android-in-virtualbox/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/06/05/mac-ip-forwarding/" title="Previous Post: Mac ip forwarding">&laquo; Mac ip forwarding</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
